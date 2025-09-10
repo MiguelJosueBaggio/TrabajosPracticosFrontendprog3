@@ -101,7 +101,7 @@ width: 500px;
 
 .tarjetasAgrupadas2{
 
-background-color:rgb(128, 160, 160)
+background-color: aliceblue;
 
 
 
@@ -109,7 +109,7 @@ background-color:rgb(128, 160, 160)
 .tarjeta2{
  
     display:inline;
-   width: 400px; 
+    
     background-color: rgb(238, 246, 244);
     border-radius: 5cap;
      
