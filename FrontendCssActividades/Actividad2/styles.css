@@ -1,0 +1,151 @@
+*{box-sizing: border-box;
+   border: 5pc;
+    border-radius: 4cap;
+}
+
+:root{
+
+    color-fondo:aquamarine;
+    color-acento: red;
+    color-texto: beige;
+
+
+}
+
+h1{
+    text-transform: uppercase;
+    text-shadow: 2px,2px,5px,rgba(8, 8, 8, 0.642); 
+    background-color: rgb(194, 242, 249);
+    font-weight: 900;
+    text-align: center;
+    width: 400px;
+    padding: 15px;
+
+    
+
+}
+p{
+    font-style: italic;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#parrafo1{
+    background-color: brown;
+}
+
+.parrafo2{
+    background-color: rgb(221, 0, 255);
+
+    width: 300px;
+    padding: 20px; 
+    margin: 15px;
+    
+}
+
+.amplio{
+line-height: 75px;
+letter-spacing: 30px;
+
+}
+blockquote{
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.tarjeta{
+    width: 500px;
+    
+    border: 5px;
+    padding: 10px;
+    margin: 15px;
+    background-color: aquamarine;
+    border-radius: 5cap;
+     box-shadow: 15px 15px 5px rgb(122, 24, 227);
+
+
+}
+
+.tarjeta p{
+    width: 100;
+    background-color: brown;
+    text-align: center;
+    color: var(color-texto);
+
+
+}
+.tarjeta h2{
+    text-align: center;
+}
+
+/*Border box y content box se diferncian en que el primero el witdh incluye padding margin y contorno, en el segundo el witdth solo representa las dimensiones del contenido*/
+.tarjetasAgrupadas1{
+
+background-color: beige;
+
+
+
+}
+.tarjeta1{
+
+width: 500px;
+    display: block;
+    border: 5px;
+    padding: 10px;
+    margin: 30px;
+    background-color: aquamarine;
+    border-radius: 5cap;
+     box-shadow: 15px 15px 5px rgb(122, 24, 227);
+
+}
+
+.tarjetasAgrupadas2{
+
+background-color:rgb(128, 160, 160)
+
+
+
+}
+.tarjeta2{
+ 
+    display:inline;
+   width: 400px; 
+    background-color: rgb(238, 246, 244);
+    border-radius: 5cap;
+     
+
+
+
+
+}
+
+.tarjetasAgrupadas3{
+background-color: aquamarine;
+
+}
+.tarjeta3{
+  display: inline-block;
+    background-color: brown;
+    width: 200px;
+    height: 60px;
+
+}
+.tarjeta3medio{
+  display: inline-block;
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+
+} 
+.buton1{
+    display: none;
+    background-color: bisque;
+    width: 50px;
+}
+.buton2{
+    visibility: hidden;
+    background-color: bisque;
+    width: 50px;
+}
+
+
