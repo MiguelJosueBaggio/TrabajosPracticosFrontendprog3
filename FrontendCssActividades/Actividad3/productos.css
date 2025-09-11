@@ -1,0 +1,54 @@
+*{
+box-sizing: border-box;
+
+}
+.tarjetas{
+    background-color:rgb(230, 227, 227);
+}
+
+.tarjeta{
+    position: relative;
+justify-items: center;    
+display: inline-block;
+background-color: white;
+width: 200 px;
+height: 250px;
+padding: 10px;
+margin: 15px;
+border-radius: 2cap;
+box-shadow: 10px 10px 5px grey;
+}
+h2{
+     text-align: center;
+    color: rgb(44, 164, 175);
+    text-transform: uppercase;
+   
+}
+p{
+    text-align: center;
+}
+
+.imagen{
+    
+    width: 150px;
+    height:120px ;
+    padding: 5;
+    border-radius: 1cap;
+    background-color: gray;
+    
+}
+button{
+    background-color: blue;
+    color: aliceblue;
+    border-radius: 1cap;
+    position: absolute ;
+    left: 41%;
+    
+}
+
+button:hover {
+background-color: rgb(255, 0, 64);
+color: black;
+box-shadow: 0 0 5px cyan, 0 0 10px rgb(0, 132, 255), 0 0 10px cyan;
+border: none;
+}

@@ -1,0 +1,60 @@
+/* === Reset y básicos === */ 
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+} 
+body { 
+  font-family: system-ui, -apple-system; 
+  line-height: 1.5; 
+  color: #0f172a; 
+  background: #f8fafc; 
+} 
+ 
+/* === Variables === */ 
+:root { 
+  --bg: #f8fafc; 
+  --panel: #fff; 
+  --text: #0f172a; 
+  --muted: #64748b; 
+  --primary: #2563eb; 
+  --primary-600: #1d4ed8; 
+  --primary-700: #1e40af; 
+  --accent: #16a34a; 
+  --danger: #dc2626; 
+  --radius: 14px; 
+  --shadow: 0 6px 24px rgba(15, 23, 42, 0.08); 
+  --container: 1100px; 
+  --space-1: 4px; 
+  --space-2: 8px; 
+  --space-3: 12px; 
+  --space-4: 16px; 
+  --space-5: 20px; 
+  --space-6: 24px; 
+  --space-8: 32px; 
+  --space-10: 40px; 
+  --space-12: 48px; 
+} 
+.site-header__mark { 
+width: 36px; 
+height: 36px; 
+border-radius: 50%; 
+display: flex; 
+justify-content: center; 
+align-items: center; 
+background: linear-gradient(135deg, var(--primary), var(--accent));  
+color: #fff; 
+font-weight: 800; 
+}
+.encabezado{
+    width: 20%;
+}
+
+ul{display: flex;
+    flex-direction: row;
+justify-content:flex-end;
+align-items: flex-end;
+height:1px ;
+gap: 20px;
+
+}
