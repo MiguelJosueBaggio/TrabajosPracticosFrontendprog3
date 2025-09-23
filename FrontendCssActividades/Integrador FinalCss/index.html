@@ -8,41 +8,50 @@
   </head>
   <body>
     <header>
+      <div class="box"> 
       <div class="encabezado">
         <a href="#top" class="site-header__logo" aria-label="Inicio">
           <span class="site-header__mark" aria-hidden="true">M</span>
           <span>MiTienda</span>
-        </a></div>
-         <div class="navegador">
+        </a>
+      <div class="navegador">
         <nav>
           <ul>
             <li><a href="#novedades">Novedades</a></li>
             <li><a href="#Ofertas">Ofertas</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
+          <div><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-deep"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6h16" /><path d="M7 12h13" /><path d="M10 18h10" /></svg></div>
         </nav>
+      </div>
+      
+      </div>
+         
       </div>
     </header>
     <main>
+      <div class="boxSection">
       <section>
-        <h2>1) Sistemas de botones</h2>
-        <div>
-          <button>Primario</button>
-          <button>Secundario</button>
-          <button>Outline</button>
-          <button>Peligro</button>
-          <button>Con icono</button>
-          <button>Deshabilitado</button>
+       <h2>1) Sistemas de botones</h2>
+        <div class="btn-group">
+           
+            
+          <button class="btn btn--primary">Primario</button>
+          <button class="btn btn--secondary">Secundario</button>
+          <button class="btn btn--outline">Outline</button>
+          <button class="btn btn--danger">Peligro</button>
+          <button class="btn btn--icon"><span><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg></span><p class="btnicon--text">Con icono</p></button>
+          <button class="btn" disabled>Deshabilitado</button>
         </div>
       </section>
 
       <section class="tarjeta">
-        <h2>Tarjeta de Producto</h2>
+        <h2>2) Tarjeta de Producto</h2>
         <div class="tarjetaImagenes">
-          <div class="tarjeta_imagen">
-            <img src="" alt="" />
-          </div>
-          <div class="tarjeta_nuevo"><p>nuevoo</p></div>
+          
+            <img class="imagen" src= "ImagenZapatilla\zapatillas.webp" />
+          
+          <div class="tarjeta_nuevo"><p>Nuevo</p></div>
         </div>
         <div class="tarjeta_descripcion">
           <h3>Zapatillas Runner Pro</h3>
@@ -52,14 +61,15 @@
           </p>
         </div>
         <div class="tarjeta_precios">
-          <p>24.999</p>
-          <p>29.999</p>
+          <span>24.999</span>
+          <span class="tarjeta_precios--tachado">29.999</span>
         </div>
-        <div class="tarjeta_buttons">
-          <button>Comprar Ahora</button>
-          <button>Añadir</button>
+        <div class=" tarjeta_buttons">
+          <button class="btn btn--primary">Comprar Ahora</button>
+          <button class="btn  btn--icon btn--anadir" ><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-circle-dashed-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.56 3.69a9 9 0 0 0 -2.92 1.95" /><path d="M3.69 8.56a9 9 0 0 0 -.69 3.44" /><path d="M3.69 15.44a9 9 0 0 0 1.95 2.92" /><path d="M8.56 20.31a9 9 0 0 0 3.44 .69" /><path d="M15.44 20.31a9 9 0 0 0 2.92 -1.95" /><path d="M20.31 15.44a9 9 0 0 0 .69 -3.44" /><path d="M20.31 8.56a9 9 0 0 0 -1.95 -2.92" /><path d="M15.44 3.69a9 9 0 0 0 -3.44 -.69" /><path d="M9 12h6" /><path d="M12 9v6" /></svg><span>Añadir</span></button>
         </div>
       </section>
+      </div>
       <section id="novedades">
         <h2>Novedades</h2>
         <p>Seccion de relleno para pobar el menu</p>

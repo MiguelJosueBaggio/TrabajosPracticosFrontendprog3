@@ -10,6 +10,7 @@ body {
   color: #0f172a; 
   background: #f8fafc; 
 } 
+
  
 /* === Variables === */ 
 :root { 
@@ -35,26 +36,178 @@ body {
   --space-10: 40px; 
   --space-12: 48px; 
 } 
+header{position: sticky;
+  top: 0;}
+
+.encabezado{
+   display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  padding: 10px 20px;
+  background: #f4f4f4;
+  
+}
+
+.site-header__logo{ width:200px;
+
+  display: flex;
+  align-items: flex-start;
+
+
+}
 .site-header__mark { 
+display: flex;
 width: 36px; 
 height: 36px; 
 border-radius: 50%; 
 display: flex; 
 justify-content: center; 
-align-items: center; 
+align-items: flex-start; 
 background: linear-gradient(135deg, var(--primary), var(--accent));  
 color: #fff; 
 font-weight: 800; 
 }
 .encabezado{
-    width: 20%;
+    
+    display: flex;
+    align-items: flex-end;
+
 }
 
 ul{display: flex;
     flex-direction: row;
 justify-content:flex-end;
-align-items: flex-end;
-height:1px ;
+align-items:first baseline;
+height:36px ;
 gap: 20px;
 
+}
+nav div{
+  display: none;
+}
+
+main{
+  background-color: #dee2e6;
+}
+.boxSection{
+display: grid;
+grid-template-columns: 1fr  1fr;
+gap: 30px;
+
+}
+@media(max-width:768px){
+  nav ul {display: none;}
+  nav div{display: block;}
+  .boxSection{grid-template-columns: 1fr;}
+
+}
+h2{background-color: var(--bg);}
+
+.btn-group{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 32px;
+
+  background-color: var(--bg) ;
+}
+
+.btn{
+  
+  padding: 16px;
+  border-radius: var(--radius);
+  border-color: var(--bg);
+}
+
+.btn--primary{
+
+  color: var(--panel);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+
+.btn--outline{
+  background-color: var(--panel);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn--danger{ background-color: var(--danger);
+  color: var(--bg);
+  border-color: var(--danger);
+}
+.btn--icon{ background-color: var(--primary);
+  color: var(--bg);
+  border-color: var(--primary);
+display: flex;
+align-items: center;
+
+
+}
+.btn--icon p {
+  background-color: var(--primary);
+}
+
+
+.btn:hover{
+  background-color: #64748b;
+  box-shadow: var(--shadow);
+}
+
+.imagen{
+  width: 250px;
+}
+.tarjeta{
+  background-color: var(--bg);
+}
+.tarjetaImagenes{
+  position: relative;
+}
+
+.tarjeta_nuevo {
+  position: absolute;
+  top: -5px;
+  
+ 
+ width: 55px;
+ text-align: center;
+}
+.tarjeta_nuevo p{
+  background: rgb(225, 155, 5);
+  border-radius:var(--radius) ;
+}
+.tarjeta_precios  {
+
+  font-weight: bold ;
+}
+
+
+.tarjeta_precios--tachado{
+  font-weight: normal;
+  text-decoration:line-through;
+  font-size: x-small;
+}
+
+.tarjeta_buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.btn--anadir{
+  background-color: var(--bg);
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+p {background-color: var(--bg);}
+
+#novedades{
+  margin: 15px;
+}
+#ofertas{
+  margin: 15px;
+}
+#contacto{
+  margin: 15px;
 }
