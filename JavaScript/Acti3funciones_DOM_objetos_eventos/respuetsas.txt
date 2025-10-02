@@ -1,0 +1,20 @@
+punto1:
+Diferencias entre funciones declarativas y expresadas, la princpal diferencia es que las funciones declaradas son almacenadas en una variable, las expresadas no. Otra diferencia es que las declarativas poseen hosting , que tiene como consecuencia ser ejecutadas primeros sin tener encuenta el orden.
+
+Punto3
+Porpiedades son aquellas carateristicas o atributos que definen al obejto,Los metodos son funciones que dicho metodo puede realizar como una unidad independiente.
+
+Punto4
+La desestrucuracion permite tener informacion consisa sin repetir codigo.
+Punto5
+El spread expande los arrays es decir los puede ampliar introduciendo uno dentro del otro , tambien aplica a los atributos de los objetos.
+el rest hace lo contrario, agrupa valores por ejemplo parametros de funciones
+
+punto7
+El evento que uso es el click y el input, el click actua como disparados y el input genera la creacion de listas a traves del usuario.
+punto8
+El evento preventDefault evita que la pagina se refresque cuando el usuario inserta algun dato, por ejemó nps permite ver el alerta.
+
+punto9
+
+El event input se dispara cuando hay un ingreso en el contenido de un campo, el keydown cuando presionamos alguna tecla se dispara, y el change cuando hay un cambio en la seleccion de opciones
