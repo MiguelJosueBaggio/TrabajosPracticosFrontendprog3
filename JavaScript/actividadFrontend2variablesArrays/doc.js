@@ -36,18 +36,20 @@ lista.forEach(element => {
     }
 });console.log("la palabra mas larga es ", palabraMax);
 
-let lista2=[leugiM, eusoJ, oiggaB];
+let lista2=["leugiM", "eusoJ", "oiggaB"];
 let listaPalabr=[];
-let listainVertida=[];
+
+let listainvertidaFinali=[];
 
 lista2.forEach(element => {
+    let listainVertida=[];
  listaPalabr= element.split("");
     for (let index = 0; index < listaPalabr.length; index++) {
-        listainVertida.unshift(listaPalabr[i])
+        listainVertida.unshift(listaPalabr[index])
         
     }
-    listainVertida.push(", ")
+    listainvertidaFinali.push(listainVertida.join(""));
 });
 
-console.log(listainVertida);
-alert("la lista invertida es ", listainVertida);
+console.log(listainvertidaFinali);
+alert("La lista invertida es: " + listainvertidaFinali.join(", "));
