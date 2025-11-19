@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simpsons App</title>
+
+  <style>
+    /* Estilos mínimos para visualización */
+    #loading {
+      display: none;
+    }
+    #error {
+      display: none;
+      color: red;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. HEADER -->
+  <header>
+    <h1>Aplicación de Personajes de Los Simpsons</h1>
+    <h3>Consulta la API y muestra información dinámica</h3>
+  </header>
+
+  <!-- 2. SECTION DE CONTROLES -->
+  <section id="controls">
+    <button id="btnCargar">Cargar Personajes</button>
+  </section>
+
+  <!-- 3. SECTION DE LOADING (OCULTO) -->
+  <section id="loading">
+    <div class="spinner">🔄</div>
+    <p>Cargando personajes...</p>
+  </section>
+
+  <!-- 4. MENSAJE DE ERROR -->
+  <div id="error"></div>
+
+  <!-- 5. SECTION DONDE SE MOSTRARÁN LOS PERSONAJES -->
+  <section id="personajes"></section>
+
+  <!-- 6. FOOTER -->
+  <footer>
+    <p>
+      API utilizada:
+      <a href="https://thesimpsonsapi.com/" target="_blank">The Simpsons API</a>
+    </p>
+  </footer>
+
+  <!-- 7. SCRIPT CON TYPE MODULE -->
+  <script type="module" src="./dist/main.js"></script>
+
+</body>
+</html>

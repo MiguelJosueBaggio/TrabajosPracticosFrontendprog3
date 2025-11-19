@@ -1,0 +1,41 @@
+DOCUMENTACIÓN DE LA API – The Simpsons API
+
+1. Peticiones de prueba
+
+Se realizaron peticiones a la API usando: - Navegador web (ingresando la
+URL directa) - Postman (método GET a:
+https://thesimpsonsapi.com/api/characters)
+
+2. Estructura de datos que devuelve la API
+
+La API devuelve un objeto JSON con la siguiente estructura:
+
+-   count (number): Total de personajes.
+-   next (string | null): URL de la página siguiente.
+-   prev (string | null): URL de la página anterior.
+-   pages (number): Cantidad total de páginas.
+-   results (Array): Lista de personajes.
+
+Estructura de un Character:
+
+-   id (number): ID único del personaje.
+-   age (number): Edad del personaje.
+-   birthdate (string): Fecha de nacimiento (AAAA-MM-DD).
+-   gender (string): Género.
+-   name (string): Nombre del personaje.
+-   occupation (string): Ocupación.
+-   portrait_path (string): Ruta relativa de la imagen.
+-   phrases (string[]): Frases representativas del personaje.
+-   status (string): Alive o Deceased.
+
+Ejemplo para formar la URL de la imagen:
+https://cdn.thesimpsonsapi.com/500 + portrait_path
+
+Ejemplo real obtenido desde la API:
+
+{ “count”: 1182, “next”:
+“https://thesimpsonsapi.com/api/characters?page=2”, “prev”: null,
+“pages”: 60, “results”: [ { “id”: 1, “age”: 39, “birthdate”:
+“1956-05-12”, “gender”: “Male”, “name”: “Homer Simpson”, “occupation”:
+“Safety Inspector”, “portrait_path”: “/character/1.webp”, “phrases”:
+[“Doh!”, “Why you little…!”, “Woo-hoo!”], “status”: “Alive” } ] }
